@@ -157,6 +157,68 @@
 
   window.addEventListener("load", initSwiper);
 
+  let currentSlideIndex = 1;
+
+// Auto play slider
+let autoPlayInterval = setInterval(() => {
+  moveSlide(1);
+}, 10000);
+
+function moveSlide(n) {
+  clearInterval(autoPlayInterval);
+  showSlide(currentSlideIndex += n);
+  autoPlayInterval = setInterval(() => {
+    moveSlide(1);
+  }, 10000);
+}
+
+function currentSlide(n) {
+  clearInterval(autoPlayInterval);
+  showSlide(currentSlideIndex = n);
+  autoPlayInterval = setInterval(() => {
+    moveSlide(1);
+  }, 10000);
+}
+
+function showSlide(n) {
+  const slides = document.querySelectorAll('.slide-item');
+  const dots = document.querySelectorAll('.dot');
+  
+  if (n > slides.length) {
+    currentSlideIndex = 1;
+  }
+  if (n < 1) {
+    currentSlideIndex = slides.length;
+  }
+  
+  slides.forEach(slide => {
+    slide.classList.remove('active');
+  });
+  
+  dots.forEach(dot => {
+    dot.classList.remove('active');
+  });
+  
+  slides[currentSlideIndex - 1].classList.add('active');
+  dots[currentSlideIndex - 1].classList.add('active');
+}
+
+// Pause auto-play when hovering
+document.querySelector('.featured-news-slider')?.addEventListener('mouseenter', () => {
+  clearInterval(autoPlayInterval);
+});
+
+document.querySelector('.featured-news-slider')?.addEventListener('mouseleave', () => {
+  autoPlayInterval = setInterval(() => {
+    moveSlide(1);
+  }, 10000);
+});
+
+// Expose slider functions to global scope so inline `onclick` handlers work
+window.moveSlide = moveSlide;
+window.currentSlide = currentSlide;
+window.showSlide = showSlide;
+
   /*
    * Pricing Toggle
    */

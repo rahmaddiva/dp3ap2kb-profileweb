@@ -69,297 +69,195 @@
   </section><!-- /Courses Hero Section -->
 
   <!-- Featured Courses Section -->
+  <!-- Featured News Section -->
   <section id="featured-courses" class="featured-courses section">
-
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
-      <h2>Featured Courses</h2>
-      <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      <h2>Berita P3AP2KB</h2>
+      <p>Berita Terbaru seputar kegiatan dan program Dinas P3AP2KB</p>
     </div><!-- End Section Title -->
 
     <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="row g-4">
+        <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
+          <div class="featured-news-slider">
+            <div class="slider-container">
+              <!-- Slide 1 -->
+              <div class="slide-item active">
+                <div class="slide-image">
+                  <img src="<?= base_url('landingpage/') ?>assets/img/blog/blog-post-1.webp" alt="News 1">
+                </div>
+                <div class="slide-overlay">
+                  <h3 class="slide-title">
+                    <a href="#">SPPG Demulih Jadi Motor Ketahanan Gizi dan Ekonomi Lokal</a>
+                  </h3>
+                </div>
+              </div>
 
-      <div class="row gy-4">
+              <!-- Slide 2 -->
+              <div class="slide-item">
+                <div class="slide-image">
+                  <img src="<?= base_url('landingpage/') ?>assets/img/blog/blog-post-2.webp" alt="News 2">
+                </div>
+                <div class="slide-overlay">
+                  <h3 class="slide-title">
+                    <a href="#">Hasil Seleksi Administrasi Pasca Sanggah Pada Seleksi Pengadaan</a>
+                  </h3>
+                </div>
+              </div>
 
-        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-          <div class="course-card">
-            <div class="course-image">
-              <img src="<?= base_url(
-                "landingpage/",
-              ) ?>assets/img/education/students-9.webp" alt="Course" class="img-fluid">
-              <div class="badge featured">Featured</div>
-              <div class="price-badge">$149</div>
+              <!-- Slide 3 -->
+              <div class="slide-item">
+                <div class="slide-image">
+                  <img src="<?= base_url('landingpage/') ?>assets/img/blog/blog-post-3.webp" alt="News 3">
+                </div>
+                <div class="slide-overlay">
+                  <h3 class="slide-title">
+                    <a href="#">Masyarakat Lumajang Merasakan Dampak Positif Penerapan Program</a>
+                  </h3>
+                </div>
+              </div>
+
+              <!-- Slide 4 -->
+              <div class="slide-item">
+                <div class="slide-image">
+                  <img src="<?= base_url('landingpage/') ?>assets/img/education/education-5.webp" alt="News 4">
+                </div>
+                <div class="slide-overlay">
+                  <h3 class="slide-title">
+                    <a href="#">Bupati Adalah Conductor dan Arranger Program MBG di Daerah</a>
+                  </h3>
+                </div>
+              </div>
             </div>
-            <div class="course-content">
-              <div class="course-meta">
-                <span class="level">Beginner</span>
-                <span class="duration">8 Weeks</span>
-              </div>
-              <h3><a href="#">Digital Marketing Fundamentals</a></h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua enim ad minim veniam.</p>
-              <div class="instructor">
-                <img src="<?= base_url(
-                  "landingpage/",
-                ) ?>assets/img/person/person-f-3.webp" alt="Instructor" class="instructor-img">
-                <div class="instructor-info">
-                  <h6>Sarah Johnson</h6>
-                  <span>Marketing Expert</span>
-                </div>
-              </div>
-              <div class="course-stats">
-                <div class="rating">
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-half"></i>
-                  <span>(4.5)</span>
-                </div>
-                <div class="students">
-                  <i class="bi bi-people-fill"></i>
-                  <span>342 students</span>
-                </div>
-              </div>
-              <a href="enroll.html" class="btn-course">Enroll Now</a>
+
+            <!-- Navigation Buttons -->
+            <button class="slider-nav prev" onclick="moveSlide(-1)">
+              <i class="bi bi-chevron-left"></i>
+            </button>
+            <button class="slider-nav next" onclick="moveSlide(1)">
+              <i class="bi bi-chevron-right"></i>
+            </button>
+
+            <!-- Slider Dots -->
+            <div class="slider-dots">
+              <span class="dot active" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
             </div>
           </div>
-        </div><!-- End Course Item -->
-
-        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-          <div class="course-card">
-            <div class="course-image">
-              <img src="<?= base_url(
-                "landingpage/",
-              ) ?>assets/img/education/campus-4.webp" alt="Course" class="img-fluid">
-              <div class="badge new">New</div>
-              <div class="price-badge">$89</div>
+        </div>
+        <!-- Right Side - News List with Scroll -->
+        <div class="col-lg-6" data-aos="fade-left" data-aos-delay="300">
+          <div class="news-list-container">
+            <div class="news-list-header">
+              <h4>Berita Terbaru</h4>
+              <a href="#" class="view-all">Lihat Semua <i class="bi bi-arrow-right"></i></a>
             </div>
-            <div class="course-content">
-              <div class="course-meta">
-                <span class="level">Intermediate</span>
-                <span class="duration">6 Weeks</span>
-              </div>
-              <h3><a href="#">Web Development with JavaScript</a></h3>
-              <p>Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-                consequat duis aute irure dolor in reprehenderit.</p>
-              <div class="instructor">
-                <img src="<?= base_url(
-                  "landingpage/",
-                ) ?>assets/img/person/person-m-5.webp" alt="Instructor" class="instructor-img">
-                <div class="instructor-info">
-                  <h6>Michael Chen</h6>
-                  <span>Full Stack Developer</span>
+
+            <div class="news-list-scroll">
+              <!-- News Item 1 -->
+              <div class="news-list-item">
+                <div class="news-thumbnail">
+                  <img src="<?= base_url('landingpage/') ?>assets/img/blog/blog-post-2.webp" alt="News Thumbnail">
+                </div>
+                <div class="news-info">
+                  <div class="news-meta-small">
+                    <span class="source">BGN</span>
+                    <span class="date">14 Desember 2025</span>
+                  </div>
+                  <h5 class="news-title-small">
+                    <a href="#">Hasil Seleksi Administrasi Pasca Sanggah Pada Seleksi Pengadaan...</a>
+                  </h5>
                 </div>
               </div>
-              <div class="course-stats">
-                <div class="rating">
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <span>(5.0)</span>
+
+              <!-- News Item 2 -->
+              <div class="news-list-item">
+                <div class="news-thumbnail">
+                  <img src="<?= base_url('landingpage/') ?>assets/img/blog/blog-post-3.webp" alt="News Thumbnail">
                 </div>
-                <div class="students">
-                  <i class="bi bi-people-fill"></i>
-                  <span>156 students</span>
+                <div class="news-info">
+                  <div class="news-meta-small">
+                    <span class="source">BGN</span>
+                    <span class="date">14 Desember 2025</span>
+                  </div>
+                  <h5 class="news-title-small">
+                    <a href="#">Masyarakat Lumajang Merasakan Dampak Positif Penerapan Program...</a>
+                  </h5>
                 </div>
               </div>
-              <a href="enroll.html" class="btn-course">Enroll Now</a>
+
+              <!-- News Item 3 -->
+              <div class="news-list-item">
+                <div class="news-thumbnail">
+                  <img src="<?= base_url('landingpage/') ?>assets/img/education/education-5.webp" alt="News Thumbnail">
+                </div>
+                <div class="news-info">
+                  <div class="news-meta-small">
+                    <span class="source">BGN</span>
+                    <span class="date">14 Desember 2025</span>
+                  </div>
+                  <h5 class="news-title-small">
+                    <a href="#">Bupati Adalah Conductor dan Arranger Program MBG di Daerah</a>
+                  </h5>
+                </div>
+              </div>
+
+              <!-- News Item 4 -->
+              <div class="news-list-item">
+                <div class="news-thumbnail">
+                  <img src="<?= base_url('landingpage/') ?>assets/img/education/activities-3.webp" alt="News Thumbnail">
+                </div>
+                <div class="news-info">
+                  <div class="news-meta-small">
+                    <span class="source">BGN</span>
+                    <span class="date">13 Desember 2025</span>
+                  </div>
+                  <h5 class="news-title-small">
+                    <a href="#">Eco-Eduwisata MBG: Anak Bangli Belajar Gizi Nyata</a>
+                  </h5>
+                </div>
+              </div>
+
+              <!-- News Item 5 -->
+              <div class="news-list-item">
+                <div class="news-thumbnail">
+                  <img src="<?= base_url('landingpage/') ?>assets/img/education/teacher-6.webp" alt="News Thumbnail">
+                </div>
+                <div class="news-info">
+                  <div class="news-meta-small">
+                    <span class="source">BGN</span>
+                    <span class="date">13 Desember 2025</span>
+                  </div>
+                  <h5 class="news-title-small">
+                    <a href="#">Program Pemberdayaan Perempuan Tingkatkan Kesejahteraan Keluarga</a>
+                  </h5>
+                </div>
+              </div>
+
+              <!-- News Item 6 -->
+              <div class="news-list-item">
+                <div class="news-thumbnail">
+                  <img src="<?= base_url('landingpage/') ?>assets/img/education/courses-4.webp" alt="News Thumbnail">
+                </div>
+                <div class="news-info">
+                  <div class="news-meta-small">
+                    <span class="source">BGN</span>
+                    <span class="date">12 Desember 2025</span>
+                  </div>
+                  <h5 class="news-title-small">
+                    <a href="#">Sosialisasi Perlindungan Anak di Era Digital untuk Orang Tua</a>
+                  </h5>
+                </div>
+              </div>
             </div>
           </div>
-        </div><!-- End Course Item -->
-
-        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-          <div class="course-card">
-            <div class="course-image">
-              <img src="<?= base_url(
-                "landingpage/",
-              ) ?>assets/img/education/students-7.webp" alt="Course" class="img-fluid">
-              <div class="badge certificate">Certificate</div>
-              <div class="price-badge">Free</div>
-            </div>
-            <div class="course-content">
-              <div class="course-meta">
-                <span class="level">Beginner</span>
-                <span class="duration">4 Weeks</span>
-              </div>
-              <h3><a href="#">Introduction to Data Science</a></h3>
-              <p>Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim id est
-                laborum sed ut perspiciatis unde omnis.</p>
-              <div class="instructor">
-                <img src="<?= base_url(
-                  "landingpage/",
-                ) ?>assets/img/person/person-f-7.webp" alt="Instructor" class="instructor-img">
-                <div class="instructor-info">
-                  <h6>Dr. Emily Watson</h6>
-                  <span>Data Scientist</span>
-                </div>
-              </div>
-              <div class="course-stats">
-                <div class="rating">
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star"></i>
-                  <span>(4.2)</span>
-                </div>
-                <div class="students">
-                  <i class="bi bi-people-fill"></i>
-                  <span>789 students</span>
-                </div>
-              </div>
-              <a href="enroll.html" class="btn-course">Enroll Now</a>
-            </div>
-          </div>
-        </div><!-- End Course Item -->
-
-        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-          <div class="course-card">
-            <div class="course-image">
-              <img src="<?= base_url(
-                "landingpage/",
-              ) ?>assets/img/education/education-5.webp" alt="Course" class="img-fluid">
-              <div class="badge popular">Popular</div>
-              <div class="price-badge">$199</div>
-            </div>
-            <div class="course-content">
-              <div class="course-meta">
-                <span class="level">Advanced</span>
-                <span class="duration">12 Weeks</span>
-              </div>
-              <h3><a href="#">Business Strategy &amp; Leadership</a></h3>
-              <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam
-                rem aperiam eaque ipsa quae ab illo.</p>
-              <div class="instructor">
-                <img src="<?= base_url(
-                  "landingpage/",
-                ) ?>assets/img/person/person-m-8.webp" alt="Instructor" class="instructor-img">
-                <div class="instructor-info">
-                  <h6>Robert Anderson</h6>
-                  <span>Business Consultant</span>
-                </div>
-              </div>
-              <div class="course-stats">
-                <div class="rating">
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-half"></i>
-                  <span>(4.7)</span>
-                </div>
-                <div class="students">
-                  <i class="bi bi-people-fill"></i>
-                  <span>234 students</span>
-                </div>
-              </div>
-              <a href="enroll.html" class="btn-course">Enroll Now</a>
-            </div>
-          </div>
-        </div><!-- End Course Item -->
-
-        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-          <div class="course-card">
-            <div class="course-image">
-              <img src="<?= base_url(
-                "landingpage/",
-              ) ?>assets/img/education/activities-3.webp" alt="Course" class="img-fluid">
-              <div class="badge certificate">Certificate</div>
-              <div class="price-badge">$129</div>
-            </div>
-            <div class="course-content">
-              <div class="course-meta">
-                <span class="level">Intermediate</span>
-                <span class="duration">10 Weeks</span>
-              </div>
-              <h3><a href="#">Graphic Design Masterclass</a></h3>
-              <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia consequuntur magni
-                dolores eos qui ratione voluptatem.</p>
-              <div class="instructor">
-                <img src="<?= base_url(
-                  "landingpage/",
-                ) ?>assets/img/person/person-f-12.webp" alt="Instructor" class="instructor-img">
-                <div class="instructor-info">
-                  <h6>Lisa Martinez</h6>
-                  <span>Creative Director</span>
-                </div>
-              </div>
-              <div class="course-stats">
-                <div class="rating">
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star"></i>
-                  <span>(4.3)</span>
-                </div>
-                <div class="students">
-                  <i class="bi bi-people-fill"></i>
-                  <span>467 students</span>
-                </div>
-              </div>
-              <a href="enroll.html" class="btn-course">Enroll Now</a>
-            </div>
-          </div>
-        </div><!-- End Course Item -->
-
-        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-          <div class="course-card">
-            <div class="course-image">
-              <img src="<?= base_url(
-                "landingpage/",
-              ) ?>assets/img/education/teacher-6.webp" alt="Course" class="img-fluid">
-              <div class="badge new">New</div>
-              <div class="price-badge">$99</div>
-            </div>
-            <div class="course-content">
-              <div class="course-meta">
-                <span class="level">Beginner</span>
-                <span class="duration">5 Weeks</span>
-              </div>
-              <h3><a href="#">Photography for Beginners</a></h3>
-              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum
-                deleniti atque corrupti quos dolores et quas.</p>
-              <div class="instructor">
-                <img src="<?= base_url(
-                  "landingpage/",
-                ) ?>assets/img/person/person-m-11.webp" alt="Instructor" class="instructor-img">
-                <div class="instructor-info">
-                  <h6>James Wilson</h6>
-                  <span>Professional Photographer</span>
-                </div>
-              </div>
-              <div class="course-stats">
-                <div class="rating">
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-half"></i>
-                  <span>(4.6)</span>
-                </div>
-                <div class="students">
-                  <i class="bi bi-people-fill"></i>
-                  <span>298 students</span>
-                </div>
-              </div>
-              <a href="enroll.html" class="btn-course">Enroll Now</a>
-            </div>
-          </div>
-        </div><!-- End Course Item -->
-
+        </div>
       </div>
-
-      <div class="more-courses text-center" data-aos="fade-up" data-aos-delay="500">
-        <a href="courses.html" class="btn-more">View All Courses</a>
-      </div>
-
     </div>
-
-  </section><!-- /Featured Courses Section -->
+  </section><!-- /Featured News Section --><!-- /Featured Courses Section -->
 
   <!-- Course Categories Section -->
   <section id="course-categories" class="course-categories section">
