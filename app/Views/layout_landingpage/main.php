@@ -4,12 +4,13 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Index - Learner Bootstrap Template</title>
+  <title>Dinas P3AP2KB | Pemberdayaan Perempuan, Perlindungan Anak, Pengendalian Penduduk, dan Keluarga Berencana
+  </title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="<?= base_url("landingpage/") ?>assets/img/favicon.png" rel="icon">
+  <link href="<?= base_url("landingpage/") ?>assets/img/logo_tanah_laut.png" rel="icon">
   <link href="<?= base_url(
     "landingpage/",
   ) ?>assets/img/apple-touch-icon.png" rel="apple-touch-icon">
@@ -49,13 +50,6 @@
     "landingpage/",
   ) ?>assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Learner
-  * Template URL: https://bootstrapmade.com/learner-bootstrap-course-template/
-  * Updated: Jul 08 2025 with Bootstrap v5.3.7
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body class="index-page">

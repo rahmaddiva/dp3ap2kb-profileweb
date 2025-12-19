@@ -1,3 +1,4 @@
+
 /**
 * Template Name: Learner
 * Template URL: https://bootstrapmade.com/learner-bootstrap-course-template/
@@ -156,9 +157,9 @@ h6 {
 # Global Header
 --------------------------------------------------------------*/
 .header {
-  --background-color: #a9adb1a5;
-  --default-color: #ffffff;
-  --heading-color: #ffffff;
+  --background-color: #ffffff; /* switched to light/white background */
+  --default-color: #111827;    /* dark text for nav items */
+  --heading-color: #111827;    /* dark color for headings/logo */
   --accent-color: #2e80e4;
   color: var(--default-color);
   background-color: var(--background-color);
@@ -1140,6 +1141,10 @@ section,
   .courses-hero .hero-text {
     margin-bottom: 3rem;
   }
+
+  .courses-hero .hero-text .accent {
+    color: var(--accent-color);
+  }
 }
 
 @media (max-width: 768px) {
@@ -1425,6 +1430,181 @@ section,
 /*--------------------------------------------------------------
 # Course Categories Section
 --------------------------------------------------------------*/
+/* Partners background & helpers */
+.partners-section {
+  position: relative;
+  overflow: hidden;
+}
+.partners-section .partners-bg {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  z-index: 0;
+  padding: 0; /* remove internal offset so svg can be full-bleed */
+  overflow: visible; /* allow svg to extend edge-to-edge */
+}
+.partners-section .partners-bg .bg-svg {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0; /* anchor to top of section */
+  width: 100vw; /* full viewport width */
+  max-width: none;
+  height: auto;
+  opacity: 0.12;
+  pointer-events: none;
+  object-fit: cover;
+} 
+.partners-section .container {
+  position: relative;
+  z-index: 1;
+}
+.partners-section .section-title h2 {
+  margin-bottom: 6px;
+}
+
+/* Left title styling to match provided example */
+.partners-section .left-title h2 {
+  font-size: 44px;
+  font-weight: 800;
+  line-height: 1.05;
+  margin-bottom: 0.4rem;
+}
+.partners-section .left-title .accent {
+  color: #c59b2b; /* gold accent similar to example */
+}
+.partners-section .left-title .lead {
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  font-size: 18px;
+  margin-top: 0.6rem;
+}
+
+.partners-section .partner-list .accordion-button {
+  background: transparent;
+  color: var(--default-color);
+  font-weight: 600;
+  padding-left: 0.6rem;
+}
+.partners-section .partner-list .accordion-button::after {
+  filter: none;
+}
+.partners-section .partner-list .accordion-body {
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+}
+
+/* About / Tentang Kami Section */
+.about {
+  padding-top: 36px;
+  padding-bottom: 36px;
+  position: relative; /* anchor for decorative elements */
+}
+.about .about-content h2 {
+  font-size: 28px;
+  margin-bottom: 6px;
+  color: var(--default-color);
+}
+.about .section-label {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--default-color), transparent 60%);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  position: relative;
+  display: inline-block;
+}
+.about .section-label::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--default-color), transparent 70%);
+  display: inline-block;
+  margin-right: 10px;
+  box-shadow: 12px 0 0 color-mix(in srgb, var(--default-color), transparent 70%), 24px 0 0 color-mix(in srgb, var(--default-color), transparent 70%);
+  vertical-align: middle;
+}
+
+.about .about-heading {
+  font-family: var(--heading-font, inherit);
+  font-size: clamp(28px, 6.6vw, 64px);
+  line-height: 1.02;
+  margin: 8px 0 14px;
+  font-weight: 800;
+  color: #0f2e6d; /* deep navy similar to example */
+  letter-spacing: -0.01em;
+}
+.about .about-heading .accent {
+  color: #c59b2b; /* existing accent */
+}
+.about .about-content p { 
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+  line-height: 1.7;
+}
+.about .about-logo img {
+  max-width: 260px;
+  width: 80%;
+  height: auto;
+  display: inline-block;
+  box-shadow: 0 6px 26px rgba(17, 24, 39, 0.06);
+  border-radius: 8px;
+}
+
+/* decorative png positioned under the logo, anchored to section */
+.about .about-logo {
+  position: relative;
+  display: inline-block;
+}
+/* ensure section content is above the decorative image */
+.about .container { position: relative; z-index: 1; }
+.about::before {
+  content: "";
+  position: absolute;
+  right: 0; /* flush to the viewport edge */
+  bottom: -24px;
+  width: 65vw; /* large so it reaches the edge */
+  height: 65vw;
+  max-width: 900px;
+  max-height: 900px;
+  background-image: url('../img/about-deco.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right bottom;
+  opacity: 0.12; /* subtle by default */
+  pointer-events: none;
+  z-index: 0; /* behind container content (which has z-index:1) */
+}
+
+@media (max-width: 991px) {
+  .about::before { width: 48vw; height: 48vw; right: 0; bottom: -18px; opacity: 0.12; }
+}
+
+@media (max-width: 575px) {
+  .about::before { display: none; }
+}
+
+@media (max-width: 767px) {
+  .about .about-logo img {
+    max-width: 200px;
+    width: 48%;
+    margin-top: 12px;
+  }
+  .about .about-content h3 { font-size: 16px; }
+}
+
+@media (max-width: 767px) {
+  .partners-section .left-title h2 { font-size: 28px; }
+  .partners-section .partners-bg .bg-svg {
+    width: 120vw; /* slightly wider on small screens to avoid gaps */
+    max-width: none;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
 .course-categories .category-card {
   background: var(--surface-color);
   border-radius: 12px;
@@ -9458,6 +9638,68 @@ section,
   color: var(--accent-color);
 }
 
+.icon-circle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  font-size: 1.7rem;
+  color: #fff;
+}
+.bg-accent {
+  background: #c59b2b;
+  color: #fff !important;
+}
+.badge.bg-accent {
+  background: #c59b2b;
+  color: #fff;
+  font-size: 0.85em;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  vertical-align: middle;
+}
+.partners-section .accordion-item {
+  border: none;
+  box-shadow: 0 2px 16px 0 rgba(44, 62, 80, 0.07);
+  background: #fff;
+}
+.partners-section .accordion-button {
+  border-radius: 8px !important;
+  background: transparent;
+  color: var(--default-color);
+  font-weight: 600;
+  padding-left: 0.6rem;
+  transition: background 0.18s;
+}
+.partners-section .accordion-button:focus {
+  box-shadow: 0 0 0 2px #c59b2b33;
+}
+.partners-section .accordion-button:not(.collapsed) {
+  background: #f7f7f7;
+  color: #c59b2b;
+}
+.partners-section .accordion-body {
+  color: color-mix(in srgb, var(--default-color), transparent 30%);
+  font-size: 1.04em;
+}
+.partners-section .left-title .btn {
+  min-width: 170px;
+  font-weight: 600;
+  border-radius: 2rem;
+  box-shadow: 0 2px 8px 0 rgba(44, 62, 80, 0.06);
+  transition: background 0.18s, color 0.18s, box-shadow 0.18s;
+}
+.partners-section .left-title .btn-outline:hover {
+  background: #c59b2b;
+  color: #fff;
+  border-color: #c59b2b;
+}
+.partners-section .left-title .btn-primary:hover {
+  background: #a07d1a;
+  color: #fff;
+}
 /* Responsive Design */
 @media (max-width: 991px) {
   .featured-news-slider {

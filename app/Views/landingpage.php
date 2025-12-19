@@ -68,7 +68,6 @@
 
   </section><!-- /Courses Hero Section -->
 
-  <!-- Featured Courses Section -->
   <!-- Featured News Section -->
   <section id="featured-courses" class="featured-courses section">
     <!-- Section Title -->
@@ -259,417 +258,204 @@
     </div>
   </section><!-- /Featured News Section --><!-- /Featured Courses Section -->
 
-  <!-- Course Categories Section -->
-  <section id="course-categories" class="course-categories section">
-
-    <!-- Section Title -->
-    <div class="container section-title" data-aos="fade-up">
-      <h2>Course Categories</h2>
-      <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-    </div><!-- End Section Title -->
-
+  <!-- Inovasi Section -->
+  <section id="course-categories" class="course-categories section partners-section">
+    <!-- Background SVG (decorative) -->
+    <div class="partners-bg" aria-hidden="true">
+      <img src="<?= base_url('landingpage/') ?>assets/img/background_line.svg" alt="" class="bg-svg img-fluid">
+    </div>
+    <!-- Content -->
     <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="row align-items-center g-4">
 
-      <div class="row g-4">
-
-        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="100">
-          <a href="courses.html" class="category-card category-tech">
-            <div class="category-icon">
-              <i class="bi bi-laptop"></i>
+        <!-- Left: Big title + description + CTA -->
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="left-title mb-4">
+            <div class="d-flex align-items-center mb-2">
+              <span class="icon-circle bg-accent me-3"><i class="bi bi-people-fill"></i></span>
+              <h2 class="mb-0">RaZa SaGala <span class="accent">DP3AP2KB</span></h2>
             </div>
-            <h5>Computer Science</h5>
-            <span class="course-count">24 Courses</span>
-          </a>
-        </div><!-- End Category Item -->
+            <p class="lead">
+              Kami membuat inovasi kolaboratif dengan berbagai mitra kerja untuk memperkuat dampak program kami dalam
+              memberdayakan perempuan, melindungi anak, serta mengelola kependudukan dan keluarga berencana secara
+              efektif.
+          </div>
+        </div>
 
-        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="150">
-          <a href="courses.html" class="category-card category-business">
-            <div class="category-icon">
-              <i class="bi bi-briefcase"></i>
-            </div>
-            <h5>Business</h5>
-            <span class="course-count">18 Courses</span>
-          </a>
-        </div><!-- End Category Item -->
+        <!-- Right: Accordion list of partners -->
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
+          <div class="partner-list">
+            <div class="accordion" id="accordionPartners">
 
-        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="200">
-          <a href="courses.html" class="category-card category-design">
-            <div class="category-icon">
-              <i class="bi bi-palette"></i>
-            </div>
-            <h5>Design</h5>
-            <span class="course-count">15 Courses</span>
-          </a>
-        </div><!-- End Category Item -->
+              <div class="accordion-item shadow-sm rounded mb-3 border-0">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button collapsed d-flex align-items-center gap-2" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false"
+                    aria-controls="collapseOne">
+                    PALING PEKA (Pelayanan Konseling dan Keluarga bagi Pasangan)
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                  data-bs-parent="#accordionPartners">
+                  <div class="accordion-body">
+                    Layanan konseling pra-nikah, pasca-nikah, dan prakonsepsi untuk mendukung keluarga sehat dan
+                    berkualitas.
+                  </div>
+                </div>
+              </div>
 
-        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="250">
-          <a href="courses.html" class="category-card category-health">
-            <div class="category-icon">
-              <i class="bi bi-heart-pulse"></i>
-            </div>
-            <h5>Health &amp; Medical</h5>
-            <span class="course-count">12 Courses</span>
-          </a>
-        </div><!-- End Category Item -->
+              <div class="accordion-item shadow-sm rounded mb-3 border-0">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed d-flex align-items-center gap-2" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                    aria-controls="collapseTwo">
+                    SI CANTIK CANGKAL KONSELING & ICRA
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionPartners">
+                  <div class="accordion-body">
+                    Program ini bertujuan untuk memperkuat mental dan kesehatan reproduksi calon pengantin muda yang
+                    rentan, sekaligus menjadi bagian dari upaya nasional untuk mencegah stunting.
+                  </div>
+                </div>
+              </div>
 
-        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="300">
-          <a href="courses.html" class="category-card category-language">
-            <div class="category-icon">
-              <i class="bi bi-globe"></i>
-            </div>
-            <h5>Languages</h5>
-            <span class="course-count">21 Courses</span>
-          </a>
-        </div><!-- End Category Item -->
+              <div class="accordion-item shadow-sm rounded mb-3 border-0">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed d-flex align-items-center gap-2" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                    aria-controls="collapseThree">
+                    Si DIKA
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                  data-bs-parent="#accordionPartners">
+                  <div class="accordion-body">SiDika adalah upaya Pengadilan Agama untuk membuat proses permohonan kawin
+                    anak menjadi lebih humanis dan edukatif, dengan harapan anak dapat membatalkan atau menunda
+                    pernikahan dini mereka.
+                  </div>
+                </div>
+              </div>
 
-        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="350">
-          <a href="courses.html" class="category-card category-science">
-            <div class="category-icon">
-              <i class="bi bi-diagram-3"></i>
-            </div>
-            <h5>Science</h5>
-            <span class="course-count">16 Courses</span>
-          </a>
-        </div><!-- End Category Item -->
+              <div class="accordion-item shadow-sm rounded mb-3 border-0">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed d-flex align-items-center gap-2" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                    aria-controls="collapseFour">
+                    Daycare Tamasya
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                  data-bs-parent="#accordionPartners">
+                  <div class="accordion-body">Daycare Tamasya adalah inisiatif untuk menstandardisasi dan meningkatkan
+                    kualitas pengasuhan anak usia dini di TPA, serta memberdayakan orang tua melalui konseling parenting
+                    untuk menciptakan lingkungan tumbuh kembang anak yang optimal.</div>
+                </div>
+              </div>
 
-        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="100">
-          <a href="courses.html" class="category-card category-marketing">
-            <div class="category-icon">
-              <i class="bi bi-megaphone"></i>
-            </div>
-            <h5>Marketing</h5>
-            <span class="course-count">19 Courses</span>
-          </a>
-        </div><!-- End Category Item -->
+              <div class="accordion-item shadow-sm rounded mb-3 border-0">
+                <h2 class="accordion-header" id="headingFive">
+                  <button class="accordion-button collapsed d-flex align-items-center gap-2" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
+                    aria-controls="collapseFive">
+                    Kulaling (Program layanan KB Keliling),
+                  </button>
+                </h2>
+                <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                  data-bs-parent="#accordionPartners">
+                  <div class="accordion-body">Kulaling adalah strategi jemput bola untuk meningkatkan pengetahuan,
+                    kesadaran, dan aksesibilitas masyarakat terhadap layanan Keluarga Berencana hingga ke pelosok desa.
+                  </div>
+                </div>
+              </div>
 
-        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="150">
-          <a href="courses.html" class="category-card category-finance">
-            <div class="category-icon">
-              <i class="bi bi-graph-up-arrow"></i>
-            </div>
-            <h5>Finance</h5>
-            <span class="course-count">14 Courses</span>
-          </a>
-        </div><!-- End Category Item -->
+              <div class="accordion-item shadow-sm rounded mb-3 border-0">
+                <h2 class="accordion-header" id="headingSix">
+                  <button class="accordion-button collapsed d-flex align-items-center gap-2" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false"
+                    aria-controls="collapseSix">
+                    Ceting Nasiku
+                  </button>
+                </h2>
+                <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                  data-bs-parent="#accordionPartners">
+                  <div class="accordion-body">Ceting Nasiku adalah program edukasi gizi praktis di tingkat desa yang
+                    mengajarkan keluarga berisiko cara mengolah bahan pangan lokal menjadi menu sehat untuk mencegah
+                    stunting.
+                  </div>
+                </div>
+              </div>
 
-        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="200">
-          <a href="courses.html" class="category-card category-photography">
-            <div class="category-icon">
-              <i class="bi bi-camera"></i>
-            </div>
-            <h5>Photography</h5>
-            <span class="course-count">11 Courses</span>
-          </a>
-        </div><!-- End Category Item -->
+              <div class="accordion-item shadow-sm rounded mb-3 border-0">
+                <h2 class="accordion-header" id="headingSeven">
+                  <button class="accordion-button collapsed d-flex align-items-center gap-2" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false"
+                    aria-controls="collapseSeven">
+                    GENTING (Gerakan Orang Tua Asuh Cegah Stunting
+                    )
+                  </button>
+                </h2>
+                <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingSeven"
+                  data-bs-parent="#accordionPartners">
+                  <div class="accordion-body">GENTING adalah inisiatif di Kabupaten Tanah Laut di mana masyarakat
+                    umum/donatur (disebut Orang Tua Asuh/Uma Abah Maimpu) menyediakan dukungan berkelanjutan bagi
+                    keluarga berisiko untuk memastikan anak-anak mereka terhindar dari stunting.</div>
+                </div>
+              </div>
 
-        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="250">
-          <a href="courses.html" class="category-card category-music">
-            <div class="category-icon">
-              <i class="bi bi-music-note-beamed"></i>
             </div>
-            <h5>Music</h5>
-            <span class="course-count">13 Courses</span>
-          </a>
-        </div><!-- End Category Item -->
-
-        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="300">
-          <a href="courses.html" class="category-card category-engineering">
-            <div class="category-icon">
-              <i class="bi bi-gear"></i>
-            </div>
-            <h5>Engineering</h5>
-            <span class="course-count">22 Courses</span>
-          </a>
-        </div><!-- End Category Item -->
-
-        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="350">
-          <a href="courses.html" class="category-card category-law">
-            <div class="category-icon">
-              <i class="bi bi-journal-text"></i>
-            </div>
-            <h5>Law &amp; Legal</h5>
-            <span class="course-count">9 Courses</span>
-          </a>
-        </div><!-- End Category Item -->
-
-        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="100">
-          <a href="courses.html" class="category-card category-culinary">
-            <div class="category-icon">
-              <i class="bi bi-cup-hot"></i>
-            </div>
-            <h5>Culinary Arts</h5>
-            <span class="course-count">8 Courses</span>
-          </a>
-        </div><!-- End Category Item -->
-
-        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="150">
-          <a href="courses.html" class="category-card category-sports">
-            <div class="category-icon">
-              <i class="bi bi-trophy"></i>
-            </div>
-            <h5>Sports &amp; Fitness</h5>
-            <span class="course-count">17 Courses</span>
-          </a>
-        </div><!-- End Category Item -->
-
-        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="200">
-          <a href="courses.html" class="category-card category-writing">
-            <div class="category-icon">
-              <i class="bi bi-pen"></i>
-            </div>
-            <h5>Writing</h5>
-            <span class="course-count">10 Courses</span>
-          </a>
-        </div><!-- End Category Item -->
-
-        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="250">
-          <a href="courses.html" class="category-card category-psychology">
-            <div class="category-icon">
-              <i class="bi bi-body-text"></i>
-            </div>
-            <h5>Psychology</h5>
-            <span class="course-count">12 Courses</span>
-          </a>
-        </div><!-- End Category Item -->
-
-        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="300">
-          <a href="courses.html" class="category-card category-environment">
-            <div class="category-icon">
-              <i class="bi bi-tree"></i>
-            </div>
-            <h5>Environment</h5>
-            <span class="course-count">7 Courses</span>
-          </a>
-        </div><!-- End Category Item -->
-
-        <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="350">
-          <a href="courses.html" class="category-card category-communication">
-            <div class="category-icon">
-              <i class="bi bi-chat-dots"></i>
-            </div>
-            <h5>Communication</h5>
-            <span class="course-count">15 Courses</span>
-          </a>
-        </div><!-- End Category Item -->
+          </div>
+        </div>
 
       </div>
 
     </div>
 
-  </section><!-- /Course Categories Section -->
+  </section><!-- Inovasi Section -->
 
-  <!-- Featured Instructors Section -->
-  <section id="featured-instructors" class="featured-instructors section">
-
-    <!-- Section Title -->
-    <div class="container section-title" data-aos="fade-up">
-      <h2>Featured Instructors</h2>
-      <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-    </div><!-- End Section Title -->
-
+  <!-- Tentang Kami / Tujuan DP3AP2KB Section -->
+  <section id="about" class="about section light-background">
     <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="row align-items-center g-4">
 
-      <div class="row gy-4">
-
-        <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-          <div class="instructor-card">
-            <div class="instructor-image">
-              <img src="<?= base_url(
-                "landingpage/",
-              ) ?>assets/img/education/teacher-2.webp" class="img-fluid" alt="">
-              <div class="overlay-content">
-                <div class="rating-stars">
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-half"></i>
-                  <span>4.8</span>
-                </div>
-                <div class="course-count">
-                  <i class="bi bi-play-circle"></i>
-                  <span>18 Courses</span>
-                </div>
-              </div>
-            </div>
-            <div class="instructor-info">
-              <h5>Sarah Johnson</h5>
-              <p class="specialty">Web Development</p>
-              <p class="description">Nulla facilisi morbi tempus iaculis urna id volutpat lacus laoreet non curabitur
-                gravida.</p>
-              <div class="stats-grid">
-                <div class="stat">
-                  <span class="number">2.1k</span>
-                  <span class="label">Students</span>
-                </div>
-                <div class="stat">
-                  <span class="number">4.8</span>
-                  <span class="label">Rating</span>
-                </div>
-              </div>
-              <div class="action-buttons">
-                <a href="#" class="btn-view">View Profile</a>
-                <div class="social-links">
-                  <a href="#"><i class="bi bi-linkedin"></i></a>
-                  <a href="#"><i class="bi bi-twitter"></i></a>
-                </div>
-              </div>
-            </div>
+        <!-- Left: Text -->
+        <div class="col-lg-7" data-aos="fade-up" data-aos-delay="120">
+          <div class="about-content">
+            <h6 class="section-label">Tentang Kami</h6>
+            <h2 class="about-heading mb-3">DP3AP2KB: Dinas Daerah yang Berkomitmen pada <span class="accent">Peningkatan
+                Kualitas Hidup dan Kesejahteraan Keluarga</span></h2>
+            <p>
+              DP3AP2KB (Dinas Pemberdayaan Perempuan, Perlindungan Anak, Pengendalian Penduduk, dan Keluarga Berencana)
+              adalah organisasi penting di tingkat daerah yang memiliki mandat untuk menjamin terpenuhinya hak-hak
+              perempuan dan anak, sekaligus mengatur pertumbuhan populasi melalui pelaksanaan program Keluarga
+              Berencana. Kontribusi utamanya adalah meningkatkan kesejahteraan publik melalui serangkaian program yang
+              sistematis, terukur, dan didukung oleh data.
+            </p>
           </div>
         </div>
 
-        <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="250">
-          <div class="instructor-card">
-            <div class="instructor-image">
-              <img src="<?= base_url(
-                "landingpage/",
-              ) ?>assets/img/education/teacher-7.webp" class="img-fluid" alt="">
-              <div class="overlay-content">
-                <div class="rating-stars">
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <span>4.9</span>
-                </div>
-                <div class="course-count">
-                  <i class="bi bi-play-circle"></i>
-                  <span>24 Courses</span>
-                </div>
-              </div>
-            </div>
-            <div class="instructor-info">
-              <h5>Michael Chen</h5>
-              <p class="specialty">Data Science</p>
-              <p class="description">Suspendisse potenti nullam ac tortor vitae purus faucibus ornare suspendisse sed
-                nisi.</p>
-              <div class="stats-grid">
-                <div class="stat">
-                  <span class="number">3.5k</span>
-                  <span class="label">Students</span>
-                </div>
-                <div class="stat">
-                  <span class="number">4.9</span>
-                  <span class="label">Rating</span>
-                </div>
-              </div>
-              <div class="action-buttons">
-                <a href="#" class="btn-view">View Profile</a>
-                <div class="social-links">
-                  <a href="#"><i class="bi bi-github"></i></a>
-                  <a href="#"><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-          <div class="instructor-card">
-            <div class="instructor-image">
-              <img src="<?= base_url(
-                "landingpage/",
-              ) ?>assets/img/education/teacher-4.webp" class="img-fluid" alt="">
-              <div class="overlay-content">
-                <div class="rating-stars">
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star"></i>
-                  <span>4.6</span>
-                </div>
-                <div class="course-count">
-                  <i class="bi bi-play-circle"></i>
-                  <span>15 Courses</span>
-                </div>
-              </div>
-            </div>
-            <div class="instructor-info">
-              <h5>Amanda Rodriguez</h5>
-              <p class="specialty">UX Design</p>
-              <p class="description">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac
-                turpis.</p>
-              <div class="stats-grid">
-                <div class="stat">
-                  <span class="number">1.8k</span>
-                  <span class="label">Students</span>
-                </div>
-                <div class="stat">
-                  <span class="number">4.6</span>
-                  <span class="label">Rating</span>
-                </div>
-              </div>
-              <div class="action-buttons">
-                <a href="#" class="btn-view">View Profile</a>
-                <div class="social-links">
-                  <a href="#"><i class="bi bi-dribbble"></i></a>
-                  <a href="#"><i class="bi bi-behance"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="350">
-          <div class="instructor-card">
-            <div class="instructor-image">
-              <img src="<?= base_url(
-                "landingpage/",
-              ) ?>assets/img/education/teacher-9.webp" class="img-fluid" alt="">
-              <div class="overlay-content">
-                <div class="rating-stars">
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-fill"></i>
-                  <i class="bi bi-star-half"></i>
-                  <span>4.7</span>
-                </div>
-                <div class="course-count">
-                  <i class="bi bi-play-circle"></i>
-                  <span>21 Courses</span>
-                </div>
-              </div>
-            </div>
-            <div class="instructor-info">
-              <h5>David Thompson</h5>
-              <p class="specialty">Digital Marketing</p>
-              <p class="description">Vivamus magna justo lacinia eget consectetur sed convallis at tellus curabitur non
-                nulla.</p>
-              <div class="stats-grid">
-                <div class="stat">
-                  <span class="number">2.9k</span>
-                  <span class="label">Students</span>
-                </div>
-                <div class="stat">
-                  <span class="number">4.7</span>
-                  <span class="label">Rating</span>
-                </div>
-              </div>
-              <div class="action-buttons">
-                <a href="#" class="btn-view">View Profile</a>
-                <div class="social-links">
-                  <a href="#"><i class="bi bi-instagram"></i></a>
-                  <a href="#"><i class="bi bi-facebook"></i></a>
-                </div>
-              </div>
-            </div>
+        <!-- Right: Logo -->
+        <div class="col-lg-5 text-center" data-aos="fade-up" data-aos-delay="160">
+          <div class="about-logo">
+            <!-- Replace the src with the official DP3AP2KB logo when available -->
+            <img src="<?= base_url('landingpage/') ?>assets/img/logo_dp3ap2kb.svg" alt="DP3AP2KB Logo"
+              class="img-fluid" />
           </div>
         </div>
       </div>
 
     </div>
+  </section><!-- /Tentang Kami Section -->
 
-  </section><!-- /Featured Instructors Section -->
-
-  <!-- Testimonials Section -->
+  <!-- Tujuan Section -->
   <section id="testimonials" class="testimonials section">
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
-      <h2>Testimonials</h2>
-      <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      <h2>Misi P3AP2KB</h2>
+      <p>Mewujudkan Dinas P3AP2KB yang Profesional, Inovatif, dan Terpercaya dalam Memberikan Pelayanan Terbaik
+        kepada Masyarakat
+      </p>
     </div><!-- End Section Title -->
 
     <div class="container" data-aos="fade-up" data-aos-delay="100">
