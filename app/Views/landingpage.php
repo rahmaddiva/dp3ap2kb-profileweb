@@ -260,10 +260,7 @@
 
   <!-- Inovasi Section -->
   <section id="course-categories" class="course-categories section partners-section">
-    <!-- Background SVG (decorative) -->
-    <div class="partners-bg" aria-hidden="true">
-      <img src="<?= base_url('landingpage/') ?>assets/img/background_line.svg" alt="" class="bg-svg img-fluid">
-    </div>
+  
     <!-- Content -->
     <div class="container" data-aos="fade-up" data-aos-delay="100">
       <div class="row align-items-center g-4">
@@ -539,91 +536,158 @@
     </div>
   </section><!-- /tujuan Section -->
 
-  <!-- Recent Blog Posts Section -->
+  <!-- Link Terkait Section -->
   <section id="recent-blog-posts" class="recent-blog-posts section">
-
-    <!-- Section Title -->
-    <div class="container section-title" data-aos="fade-up">
-      <h2>Recent Blog Posts</h2>
-      <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-    </div><!-- End Section Title -->
-
     <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-      <div class="row gy-4">
+      <!-- Swiper-based Related Links Carousel -->
 
-        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-          <div class="card">
-            <div class="card-top d-flex align-items-center">
-              <img src="<?= base_url(
-                "landingpage/",
-              ) ?>assets/img/person/person-f-12.webp" alt="Author" class="rounded-circle me-2">
-              <span class="author-name">By Andy glamer</span>
-              <span class="ms-auto likes"><i class="bi bi-heart"></i> 65</span>
+      <!-- Swiper CSS (CDN) -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+
+      <style>
+        /* Swiper slide layout */
+        .related-swiper .swiper-slide { width: 220px; background: #fff; border-radius: 10px; padding: 12px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,.08); color: inherit; text-decoration: none; }
+        .related-swiper .swiper-slide:hover { transform: translateY(-6px); transition: transform .2s; }
+        .related-swiper .logo { height: 36px; margin-bottom: 8px; display: block; margin-left: auto; margin-right: auto; }
+        .related-swiper .title { font-size: .95rem; color: #333; display: block; }
+        .related-prev, .related-next { position: absolute; top:50%; transform: translateY(-50%); z-index: 10; background: rgba(0,0,0,.45); color:#fff; width:36px; height:36px; border-radius:50%; display:flex; align-items:center; justify-content:center; border:none; cursor:pointer; }
+        .related-prev { left:8px; }
+        .related-next { right:8px; }
+
+        @media (max-width:768px){ .related-swiper .swiper-slide{ width:160px; } }
+      </style>
+
+      <div class="related-swiper-wrapper mt-4">
+        <button class="related-prev" aria-label="Sebelumnya"><i class="bi bi-chevron-left"></i></button>
+
+        <div class="swiper related-swiper" aria-label="Link Terkait">
+          <div class="swiper-wrapper">
+
+            <!-- Slides -->
+            <div class="swiper-slide" role="listitem">
+              <a href="<?= base_url('/') ?>" target="_blank" rel="noopener">
+                <img class="logo" src="<?= base_url('landingpage/') ?>assets/img/logo_dp3ap2kb.svg" alt="DP3AP2KB Logo">
+                <span class="title">Website Resmi DP3AP2KB</span>
+              </a>
             </div>
-            <div class="card-img-wrapper">
-              <img src="<?= base_url(
-                "landingpage/",
-              ) ?>assets/img/blog/blog-post-1.webp" alt="Post Image">
+
+            <div class="swiper-slide" role="listitem">
+              <a href="https://kemenpppa.go.id" target="_blank" rel="noopener">
+                <i class="bi bi-people-fill" style="font-size:28px;color:#0d6efd;margin-bottom:6px;display:block;"></i>
+                <span class="title">Kementerian PPPA</span>
+              </a>
             </div>
-            <div class="card-body">
-              <h5 class="card-title"><a href="blog-details.html">Sed ut perspiciatis unde omnis iste natus</a></h5>
-              <p class="card-text">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                consequuntur magni dolores eos qui ratione...</p>
+
+            <div class="swiper-slide" role="listitem">
+              <a href="https://www.bkkbn.go.id" target="_blank" rel="noopener">
+                <i class="bi bi-motherboard-fill" style="font-size:28px;color:#198754;margin-bottom:6px;display:block;"></i>
+                <span class="title">BKKBN</span>
+              </a>
             </div>
+
+            <div class="swiper-slide" role="listitem">
+              <a href="https://v2.ppid.tanahlautkab.go.id/" target="_blank" rel="noopener">
+                <i class="bi bi-file-earmark-text" style="font-size:28px;color:#6f42c1;margin-bottom:6px;display:block;"></i>
+                <span class="title">PPID / Informasi Publik</span>
+              </a>
+            </div>
+
+            <div class="swiper-slide" role="listitem">
+              <a href="https://portal.tanahlautkab.go.id/" target="_blank" rel="noopener">
+                <i class="bi bi-chat-left-text" style="font-size:28px;color:#dc3545;margin-bottom:6px;display:block;"></i>
+                <span class="title">Portal Tanah Laut</span>
+              </a>
+            </div>
+
           </div>
-        </div><!-- End Post Item Card -->
+        </div>
 
-        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-          <div class="card position-relative">
-            <div class="card-top d-flex align-items-center">
-              <img src="<?= base_url(
-                "landingpage/",
-              ) ?>assets/img/person/person-f-13.webp" alt="Author" class="rounded-circle me-2">
-              <span class="author-name">By Den viliamson</span>
-              <span class="ms-auto likes"><i class="bi bi-heart"></i> 35</span>
-            </div>
-            <div class="card-img-wrapper">
-              <img src="<?= base_url(
-                "landingpage/",
-              ) ?>assets/img/blog/blog-post-2.webp" alt="Post Image">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title"><a href="blog-details.html">Nemo enim ipsam voluptatem quia voluptas sit</a></h5>
-              <p class="card-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-                voluptatum deleniti atque corrupti quos...</p>
-            </div>
-          </div>
-        </div><!-- End Post Item Card -->
-
-        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
-          <div class="card">
-            <div class="card-top d-flex align-items-center">
-              <img src="<?= base_url(
-                "landingpage/",
-              ) ?>assets/img/person/person-m-10.webp" alt="Author" class="rounded-circle me-2">
-              <span class="author-name">By Jones robbert</span>
-              <span class="ms-auto likes"><i class="bi bi-heart"></i> 58</span>
-            </div>
-            <div class="card-img-wrapper">
-              <img src="<?= base_url(
-                "landingpage/",
-              ) ?>assets/img/blog/blog-post-3.webp" alt="Post Image">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title"><a href="blog-details.html">Ut enim ad minima veniam, quis nostrum
-                  exercitationem</a></h5>
-              <p class="card-text">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
-                molestiae consequatur, vel illum qui dolorem...</p>
-            </div>
-          </div>
-        </div><!-- End Post Item Card -->
-
+        <button class="related-next" aria-label="Berikutnya"><i class="bi bi-chevron-right"></i></button>
       </div>
 
-    </div>
+      <!-- Swiper JS (CDN) -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+      <script>
+        (function(){
+          if(typeof Swiper === 'undefined') return;
 
-  </section><!-- /Recent Blog Posts Section -->
+          const container = document.querySelector('.related-swiper');
+          if(!container) return;
+
+          const initialSlides = Array.from(container.querySelectorAll('.swiper-slide'));
+          const slidesCount = initialSlides.length;
+
+          const swiper = new Swiper('.related-swiper', {
+            loop: true,
+            loopedSlides: slidesCount,
+            slidesPerView: 'auto',
+            spaceBetween: 20,
+            freeMode: true,
+            freeModeMomentum: false,
+            speed: 5000,        // increase to slow down continuous motion
+            autoplay: {
+              delay: 1, // very small delay for continuous effect
+              disableOnInteraction: false,
+              pauseOnMouseEnter: true,
+              waitForTransition: false
+            },
+            navigation: {
+              nextEl: '.related-next',
+              prevEl: '.related-prev'
+            },
+            // accessible keyboard control
+            keyboard: { enabled: true, onlyInViewport: true },
+            breakpoints: {
+              0: { slidesPerView: 'auto' },
+              768: { slidesPerView: 'auto' }
+            },
+            on: {
+              init() {
+                // If visible area is larger than content, duplicate slides to avoid stopping
+                const wrapper = this.el.querySelector('.swiper-wrapper');
+                const viewportWidth = this.el.offsetWidth || window.innerWidth;
+                const firstSlide = this.slides && this.slides[0];
+                const slideWidth = (firstSlide && firstSlide.offsetWidth) || 220;
+                const minNeeded = Math.ceil(viewportWidth / (slideWidth + (this.params.spaceBetween || 20))) + slidesCount;
+                let added = 0;
+                while(this.slides.length < minNeeded && added < slidesCount * 3){
+                  // append clones of the originals
+                  const node = initialSlides[added % slidesCount].cloneNode(true);
+                  wrapper.appendChild(node);
+                  added++;
+                }
+                if(added){
+                  this.update();
+                  // recreate loop so Swiper picks up new slides
+                  this.loopDestroy();
+                  this.loopCreate();
+                  this.update();
+                }
+
+                // ensure autoplay is running
+                try { this.autoplay.start(); } catch(e){}
+              }
+            }
+          });
+
+          // Restart autoplay when using controls
+          const prev = document.querySelector('.related-prev');
+          const next = document.querySelector('.related-next');
+          if(prev) prev.addEventListener('click', ()=> { swiper.slidePrev(); swiper.autoplay.start(); });
+          if(next) next.addEventListener('click', ()=> { swiper.slideNext(); swiper.autoplay.start(); });
+
+          // Recalculate on resize
+          let resizeTimeout = null;
+          window.addEventListener('resize', ()=>{
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(()=>{ swiper.update(); try{ swiper.loopFix(); }catch(e){} }, 200);
+          });
+
+        })();
+      </script>
+
+  </section><!-- /Link Terkait Section -->
 
   <!-- Cta Section -->
   <section id="cta" class="cta section light-background">
