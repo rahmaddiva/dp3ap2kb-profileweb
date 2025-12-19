@@ -1550,6 +1550,28 @@ section,
   display: inline-block;
   box-shadow: 0 6px 26px rgba(17, 24, 39, 0.06);
   border-radius: 8px;
+<<<<<<< HEAD
+=======
+  animation: floatLogo 6s ease-in-out infinite;
+  will-change: transform;
+}
+
+@keyframes floatLogo {
+  0%, 100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+/* Respect user's reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .about .about-logo img {
+    animation: none !important;
+  }
+>>>>>>> dbbb264a17e71fa49edeff41932464a2c854d5b0
 }
 
 /* decorative png positioned under the logo, anchored to section */
@@ -2159,6 +2181,92 @@ section,
   color: var(--default-color);
   font-style: italic;
 }
+
+/* Misi card tweaks */
+.testimonials .critic-reviews .critic-review.misi-card {
+  border-left: 4px solid var(--accent-color);
+  padding: 26px 30px 30px 26px; /* adjust for left border */
+}
+
+.testimonials .critic-reviews .critic-review.misi-card .misi-title {
+  color: var(--accent-color);
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.testimonials .critic-reviews .critic-review.misi-card .misi-text {
+  font-style: normal;
+  color: var(--default-color);
+}
+
+.testimonials .critic-reviews .critic-review.misi-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* Tujuan list styling */
+.tujuan-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 -12px; /* offset inner padding */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+
+.tujuan-item {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+  background: var(--surface-color);
+  padding: 18px;
+  border-radius: 10px;
+  box-shadow: 0 8px 22px rgba(15, 40, 80, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tujuan-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 36px rgba(15, 40, 80, 0.10);
+}
+
+.tujuan-item .icon {
+  min-width: 46px;
+  min-height: 46px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--contrast-color);
+  font-size: 20px;
+}
+
+.tujuan-item p {
+  margin: 0;
+  color: var(--default-color);
+  line-height: 1.65;
+  font-size: 0.99rem;
+}
+
+/* Responsive: single column on small screens */
+@media (max-width: 767px) {
+  .tujuan-list {
+    grid-template-columns: 1fr;
+    margin: 0;
+  }
+
+  .tujuan-item {
+    padding: 14px;
+    gap: 12px;
+  }
+
+  .tujuan-item .icon {
+    min-width: 40px;
+    min-height: 40px;
+    font-size: 18px;
+  }
+}
+
 
 .testimonials .critic-reviews .critic-review .critic-info .critic-name {
   font-weight: 600;

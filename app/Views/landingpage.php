@@ -11,7 +11,7 @@
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
             <div class="hero-text">
-              <h1>Selamat Datang di Website Resmi</h1>
+              <h1>Selamat Datang di <span class="accent">Website Resmi</span></h1>
               <h2>Dinas Pemberdayaan Perempuan dan Perlindungan Anak, Pengendalian Penduduk dan Keluarga Berencana</h2>
               <p>
                 **Kami berkomitmen penuh untuk mewujudkan keluarga berkualitas, menekan laju pertumbuhan penduduk, serta
@@ -120,7 +120,7 @@
               <!-- Slide 4 -->
               <div class="slide-item">
                 <div class="slide-image">
-                  <img src="<?= base_url('landingpage/') ?>assets/img/education/education-5.webp" alt="News 4">
+                  <img src="<?= base_url(relativePath: 'landingpage/') ?>assets/img/education/education-5.webp" alt="News 4">
                 </div>
                 <div class="slide-overlay">
                   <h3 class="slide-title">
@@ -260,10 +260,14 @@
 
   <!-- Inovasi Section -->
   <section id="course-categories" class="course-categories section partners-section">
+<<<<<<< HEAD
     <!-- Background SVG (decorative) -->
     <div class="partners-bg" aria-hidden="true">
       <img src="<?= base_url('landingpage/') ?>assets/img/background_line.svg" alt="" class="bg-svg img-fluid">
     </div>
+=======
+  
+>>>>>>> dbbb264a17e71fa49edeff41932464a2c854d5b0
     <!-- Content -->
     <div class="container" data-aos="fade-up" data-aos-delay="100">
       <div class="row align-items-center g-4">
@@ -448,319 +452,257 @@
     </div>
   </section><!-- /Tentang Kami Section -->
 
+<<<<<<< HEAD
   <!-- Tujuan Section -->
   <section id="testimonials" class="testimonials section">
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
       <h2>Misi P3AP2KB</h2>
+=======
+  <!-- Misi Section -->
+  <section id="testimonials" class="testimonials section">
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Misi DP3AP2KB</h2>
+>>>>>>> dbbb264a17e71fa49edeff41932464a2c854d5b0
       <p>Mewujudkan Dinas P3AP2KB yang Profesional, Inovatif, dan Terpercaya dalam Memberikan Pelayanan Terbaik
         kepada Masyarakat
       </p>
     </div><!-- End Section Title -->
 
+    <!-- Misi section -->
     <div class="container" data-aos="fade-up" data-aos-delay="100">
 
       <div class="row">
         <div class="col-12">
           <div class="critic-reviews" data-aos="fade-up" data-aos-delay="300">
             <div class="row">
-              <div class="col-md-4">
-                <div class="critic-review">
-                  <div class="review-quote">"</div>
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed,
-                    convallis at tellus.</p>
-                  <div class="critic-info">
-                    <div class="critic-name">The New York Times</div>
-                  </div>
+              <div class="col-md-3">
+                <div class="critic-review misi-card">
+                  <h5 class="misi-title">Misi 1 :</h5>
+                  <p class="misi-text">Mengandung makna bahwa Badan Pemberdayaan Perempuan dan Keluarga Berencana Kabupaten Tanah Laut berperan aktif dalam meningkatkan partisipasi masyarakat terhadap program Pengendalian Penduduk Keluarga Berencana guna meningkatkan ketahanan dan pemberdayaan keluarga di Kabupaten Tanah Laut.</p>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="critic-review">
-                  <div class="review-quote">"</div>
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-half"></i>
-                  </div>
-                  <p>Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Nulla quis lorem ut libero
-                    malesuada feugiat.</p>
-                  <div class="critic-info">
-                    <div class="critic-name">Washington Post</div>
-                  </div>
+
+              <div class="col-md-3">
+                <div class="critic-review misi-card">
+                  <h5 class="misi-title">Misi 2 :</h5>
+                  <p class="misi-text">Mengandung makna bahwa Badan Pemberdayaan Perempuan dan Keluarga Berencana berupaya untuk pemenuhan hak anak untuk mendapatkan kualitas hidup dan berperan serta di berbagai bidang pembangunan di Kabupaten Tanah Laut.</p>
                 </div>
               </div>
-              <div class="col-md-4">
-                <div class="critic-review">
-                  <div class="review-quote">"</div>
-                  <div class="stars">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit tortor eget felis
-                    porttitor volutpat.</p>
-                  <div class="critic-info">
-                    <div class="critic-name">The Guardian</div>
-                  </div>
+
+              <div class="col-md-3">
+                <div class="critic-review misi-card">
+                  <h5 class="misi-title">Misi 3 :</h5>
+                  <p class="misi-text">Mengandung makna bahwa Badan Pemberdayaan Perempuan dan Keluarga Berencana berperan dalam meningkatkan perlindungan perempuan dan anak.</p>
                 </div>
               </div>
-            </div>
-          </div>
 
-          <div class="testimonials-container">
-            <div class="swiper testimonials-slider init-swiper" data-aos="fade-up" data-aos-delay="400">
-              <script type="application/json" class="swiper-config">
-                {
-                  "loop": true,
-                  "speed": 600,
-                  "autoplay": {
-                    "delay": 5000
-                  },
-                  "slidesPerView": 1,
-                  "spaceBetween": 30,
-                  "pagination": {
-                    "el": ".swiper-pagination",
-                    "type": "bullets",
-                    "clickable": true
-                  },
-                  "breakpoints": {
-                    "768": {
-                      "slidesPerView": 2
-                    },
-                    "992": {
-                      "slidesPerView": 3
-                    }
-                  }
-                }
-              </script>
-
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                  <div class="testimonial-item">
-                    <div class="stars">
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                    </div>
-                    <p>
-                      Proin eget tortor risus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui.
-                      Nulla quis lorem ut libero malesuada feugiat.
-                    </p>
-                    <div class="testimonial-profile">
-                      <img src="<?= base_url(
-                        "landingpage/",
-                      ) ?>assets/img/person/person-f-1.webp" alt="Reviewer" class="img-fluid rounded-circle">
-                      <div>
-                        <h3>Jane Smith</h3>
-                        <h4>Book Enthusiast</h4>
-                      </div>
-                    </div>
-                  </div>
-                </div><!-- End testimonial item -->
-
-                <div class="swiper-slide">
-                  <div class="testimonial-item">
-                    <div class="stars">
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                    </div>
-                    <p>
-                      Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Cras ultricies ligula sed magna
-                      dictum porta. Vestibulum ante ipsum primis in faucibus orci luctus.
-                    </p>
-                    <div class="testimonial-profile">
-                      <img src="<?= base_url(
-                        "landingpage/",
-                      ) ?>assets/img/person/person-m-2.webp" alt="Reviewer" class="img-fluid rounded-circle">
-                      <div>
-                        <h3>Michael Johnson</h3>
-                        <h4>Sci-Fi Blogger</h4>
-                      </div>
-                    </div>
-                  </div>
-                </div><!-- End testimonial item -->
-
-                <div class="swiper-slide">
-                  <div class="testimonial-item">
-                    <div class="stars">
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-half"></i>
-                    </div>
-                    <p>
-                      Quisque velit nisi, pretium ut lacinia in, elementum id enim. Cras ultricies ligula sed magna
-                      dictum porta. Donec sollicitudin molestie malesuada.
-                    </p>
-                    <div class="testimonial-profile">
-                      <img src="<?= base_url(
-                        "landingpage/",
-                      ) ?>assets/img/person/person-f-3.webp" alt="Reviewer" class="img-fluid rounded-circle">
-                      <div>
-                        <h3>Emily Davis</h3>
-                        <h4>Book Club President</h4>
-                      </div>
-                    </div>
-                  </div>
-                </div><!-- End testimonial item -->
-
-                <div class="swiper-slide">
-                  <div class="testimonial-item">
-                    <div class="stars">
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                      <i class="bi bi-star-fill"></i>
-                    </div>
-                    <p>
-                      Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Curabitur aliquet quam id dui posuere
-                      blandit. Lorem ipsum dolor sit amet, consectetur.
-                    </p>
-                    <div class="testimonial-profile">
-                      <img src="<?= base_url(
-                        "landingpage/",
-                      ) ?>assets/img/person/person-m-4.webp" alt="Reviewer" class="img-fluid rounded-circle">
-                      <div>
-                        <h3>Robert Wilson</h3>
-                        <h4>Literary Reviewer</h4>
-                      </div>
-                    </div>
-                  </div>
-                </div><!-- End testimonial item -->
-
+              <div class="col-md-3">
+                <div class="critic-review misi-card">
+                  <h5 class="misi-title">Misi 4 :</h5>
+                  <p class="misi-text">Mengandung makna bahwa Badan Pemberdayaan Perempuan dan Keluarga Berencana berperan aktif dalam meningkatkan kualitas pelayanan administrasi organisasi.</p>
+                </div>
               </div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-        </div>
-      </div>
 
-      <div class="row">
-        <div class="col-12 text-center" data-aos="fade-up">
-          <div class="overall-rating">
-            <div class="rating-number">4.8</div>
-            <div class="rating-stars">
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-fill"></i>
-              <i class="bi bi-star-half"></i>
-            </div>
-            <p>Based on 230+ reviews</p>
-            <div class="rating-platforms">
-              <span>Goodreads</span>
-              <span>Amazon</span>
-              <span>Barnes &amp; Noble</span>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </section><!-- /Testimonials Section -->
+  </section>
 
-  <!-- Recent Blog Posts Section -->
-  <section id="recent-blog-posts" class="recent-blog-posts section">
 
+  <!-- Tujuan Section -->
+  <section id="tujuan" class="testimonials section">
     <!-- Section Title -->
     <div class="container section-title" data-aos="fade-up">
-      <h2>Recent Blog Posts</h2>
-      <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+      <h2>Tujuan DP3AP2KB</h2>
+      <p>Meningkatkann Kualitas Hidup Perempuan, Anak, dan Keluarga melalui Program Pemberdayaan, Perlindungan, Pengendalian Penduduk, dan Keluarga Berencana yang Terintegrasi dan Berkelanjutan</p>
     </div><!-- End Section Title -->
 
+    <!-- Tujuan content -->
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="row">
+        <div class="col-12">
+          <ul class="tujuan-list">
+            <li class="tujuan-item">
+              <div class="icon bg-accent"><i class="bi bi-people-fill"></i></div>
+              <p>Meningkatkan partisipasi masyarakat terhadap program pengendalian penduduk Keluarga Berencana, ketahanan dan pemberdayaan keluarga;</p>
+            </li>
+
+            <li class="tujuan-item">
+              <div class="icon bg-accent"><i class="bi bi-person-fill"></i></div>
+              <p>Meningkatkan Pemberdayaan Perempuan dan pemenuhan hak anak;</p>
+            </li>
+
+            <li class="tujuan-item">
+              <div class="icon bg-accent"><i class="bi bi-shield-lock-fill"></i></div>
+              <p>Meningkatkan perlindungan perempuan dan anak dari berbagai tindak kekerasan, eksploitasi, Tindak Pidana Perdagangan Orang (TPPO) dan diskriminasi;</p>
+            </li>
+
+            <li class="tujuan-item">
+              <div class="icon bg-accent"><i class="bi bi-gear-fill"></i></div>
+              <p>Meningkatkan Kualitas Pelayanan Administrasi Organisasi.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section><!-- /tujuan Section -->
+
+  <!-- Link Terkait Section -->
+  <section id="recent-blog-posts" class="recent-blog-posts section">
     <div class="container" data-aos="fade-up" data-aos-delay="100">
 
-      <div class="row gy-4">
+      <!-- Swiper-based Related Links Carousel -->
 
-        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
-          <div class="card">
-            <div class="card-top d-flex align-items-center">
-              <img src="<?= base_url(
-                "landingpage/",
-              ) ?>assets/img/person/person-f-12.webp" alt="Author" class="rounded-circle me-2">
-              <span class="author-name">By Andy glamer</span>
-              <span class="ms-auto likes"><i class="bi bi-heart"></i> 65</span>
+      <!-- Swiper CSS (CDN) -->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+
+      <style>
+        /* Swiper slide layout */
+        .related-swiper .swiper-slide { width: 220px; background: #fff; border-radius: 10px; padding: 12px; text-align: center; box-shadow: 0 2px 8px rgba(0,0,0,.08); color: inherit; text-decoration: none; }
+        .related-swiper .swiper-slide:hover { transform: translateY(-6px); transition: transform .2s; }
+        .related-swiper .logo { height: 36px; margin-bottom: 8px; display: block; margin-left: auto; margin-right: auto; }
+        .related-swiper .title { font-size: .95rem; color: #333; display: block; }
+        .related-prev, .related-next { position: absolute; top:50%; transform: translateY(-50%); z-index: 10; background: rgba(0,0,0,.45); color:#fff; width:36px; height:36px; border-radius:50%; display:flex; align-items:center; justify-content:center; border:none; cursor:pointer; }
+        .related-prev { left:8px; }
+        .related-next { right:8px; }
+
+        @media (max-width:768px){ .related-swiper .swiper-slide{ width:160px; } }
+      </style>
+
+      <div class="related-swiper-wrapper mt-4">
+        <button class="related-prev" aria-label="Sebelumnya"><i class="bi bi-chevron-left"></i></button>
+
+        <div class="swiper related-swiper" aria-label="Link Terkait">
+          <div class="swiper-wrapper">
+
+            <!-- Slides -->
+            <div class="swiper-slide" role="listitem">
+              <a href="<?= base_url('/') ?>" target="_blank" rel="noopener">
+                <img class="logo" src="<?= base_url('landingpage/') ?>assets/img/logo_dp3ap2kb.svg" alt="DP3AP2KB Logo">
+                <span class="title">Website Resmi DP3AP2KB</span>
+              </a>
             </div>
-            <div class="card-img-wrapper">
-              <img src="<?= base_url(
-                "landingpage/",
-              ) ?>assets/img/blog/blog-post-1.webp" alt="Post Image">
+
+            <div class="swiper-slide" role="listitem">
+              <a href="https://kemenpppa.go.id" target="_blank" rel="noopener">
+                <i class="bi bi-people-fill" style="font-size:28px;color:#0d6efd;margin-bottom:6px;display:block;"></i>
+                <span class="title">Kementerian PPPA</span>
+              </a>
             </div>
-            <div class="card-body">
-              <h5 class="card-title"><a href="blog-details.html">Sed ut perspiciatis unde omnis iste natus</a></h5>
-              <p class="card-text">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                consequuntur magni dolores eos qui ratione...</p>
+
+            <div class="swiper-slide" role="listitem">
+              <a href="https://www.bkkbn.go.id" target="_blank" rel="noopener">
+                <i class="bi bi-motherboard-fill" style="font-size:28px;color:#198754;margin-bottom:6px;display:block;"></i>
+                <span class="title">BKKBN</span>
+              </a>
             </div>
+
+            <div class="swiper-slide" role="listitem">
+              <a href="https://v2.ppid.tanahlautkab.go.id/" target="_blank" rel="noopener">
+                <i class="bi bi-file-earmark-text" style="font-size:28px;color:#6f42c1;margin-bottom:6px;display:block;"></i>
+                <span class="title">PPID / Informasi Publik</span>
+              </a>
+            </div>
+
+            <div class="swiper-slide" role="listitem">
+              <a href="https://portal.tanahlautkab.go.id/" target="_blank" rel="noopener">
+                <i class="bi bi-chat-left-text" style="font-size:28px;color:#dc3545;margin-bottom:6px;display:block;"></i>
+                <span class="title">Portal Tanah Laut</span>
+              </a>
+            </div>
+
           </div>
-        </div><!-- End Post Item Card -->
+        </div>
 
-        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
-          <div class="card position-relative">
-            <div class="card-top d-flex align-items-center">
-              <img src="<?= base_url(
-                "landingpage/",
-              ) ?>assets/img/person/person-f-13.webp" alt="Author" class="rounded-circle me-2">
-              <span class="author-name">By Den viliamson</span>
-              <span class="ms-auto likes"><i class="bi bi-heart"></i> 35</span>
-            </div>
-            <div class="card-img-wrapper">
-              <img src="<?= base_url(
-                "landingpage/",
-              ) ?>assets/img/blog/blog-post-2.webp" alt="Post Image">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title"><a href="blog-details.html">Nemo enim ipsam voluptatem quia voluptas sit</a></h5>
-              <p class="card-text">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
-                voluptatum deleniti atque corrupti quos...</p>
-            </div>
-          </div>
-        </div><!-- End Post Item Card -->
-
-        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
-          <div class="card">
-            <div class="card-top d-flex align-items-center">
-              <img src="<?= base_url(
-                "landingpage/",
-              ) ?>assets/img/person/person-m-10.webp" alt="Author" class="rounded-circle me-2">
-              <span class="author-name">By Jones robbert</span>
-              <span class="ms-auto likes"><i class="bi bi-heart"></i> 58</span>
-            </div>
-            <div class="card-img-wrapper">
-              <img src="<?= base_url(
-                "landingpage/",
-              ) ?>assets/img/blog/blog-post-3.webp" alt="Post Image">
-            </div>
-            <div class="card-body">
-              <h5 class="card-title"><a href="blog-details.html">Ut enim ad minima veniam, quis nostrum
-                  exercitationem</a></h5>
-              <p class="card-text">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
-                molestiae consequatur, vel illum qui dolorem...</p>
-            </div>
-          </div>
-        </div><!-- End Post Item Card -->
-
+        <button class="related-next" aria-label="Berikutnya"><i class="bi bi-chevron-right"></i></button>
       </div>
 
-    </div>
+      <!-- Swiper JS (CDN) -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+      <script>
+        (function(){
+          if(typeof Swiper === 'undefined') return;
 
-  </section><!-- /Recent Blog Posts Section -->
+          const container = document.querySelector('.related-swiper');
+          if(!container) return;
+
+          const initialSlides = Array.from(container.querySelectorAll('.swiper-slide'));
+          const slidesCount = initialSlides.length;
+
+          const swiper = new Swiper('.related-swiper', {
+            loop: true,
+            loopedSlides: slidesCount,
+            slidesPerView: 'auto',
+            spaceBetween: 20,
+            freeMode: true,
+            freeModeMomentum: false,
+            speed: 5000,        // increase to slow down continuous motion
+            autoplay: {
+              delay: 1, // very small delay for continuous effect
+              disableOnInteraction: false,
+              pauseOnMouseEnter: true,
+              waitForTransition: false
+            },
+            navigation: {
+              nextEl: '.related-next',
+              prevEl: '.related-prev'
+            },
+            // accessible keyboard control
+            keyboard: { enabled: true, onlyInViewport: true },
+            breakpoints: {
+              0: { slidesPerView: 'auto' },
+              768: { slidesPerView: 'auto' }
+            },
+            on: {
+              init() {
+                // If visible area is larger than content, duplicate slides to avoid stopping
+                const wrapper = this.el.querySelector('.swiper-wrapper');
+                const viewportWidth = this.el.offsetWidth || window.innerWidth;
+                const firstSlide = this.slides && this.slides[0];
+                const slideWidth = (firstSlide && firstSlide.offsetWidth) || 220;
+                const minNeeded = Math.ceil(viewportWidth / (slideWidth + (this.params.spaceBetween || 20))) + slidesCount;
+                let added = 0;
+                while(this.slides.length < minNeeded && added < slidesCount * 3){
+                  // append clones of the originals
+                  const node = initialSlides[added % slidesCount].cloneNode(true);
+                  wrapper.appendChild(node);
+                  added++;
+                }
+                if(added){
+                  this.update();
+                  // recreate loop so Swiper picks up new slides
+                  this.loopDestroy();
+                  this.loopCreate();
+                  this.update();
+                }
+
+                // ensure autoplay is running
+                try { this.autoplay.start(); } catch(e){}
+              }
+            }
+          });
+
+          // Restart autoplay when using controls
+          const prev = document.querySelector('.related-prev');
+          const next = document.querySelector('.related-next');
+          if(prev) prev.addEventListener('click', ()=> { swiper.slidePrev(); swiper.autoplay.start(); });
+          if(next) next.addEventListener('click', ()=> { swiper.slideNext(); swiper.autoplay.start(); });
+
+          // Recalculate on resize
+          let resizeTimeout = null;
+          window.addEventListener('resize', ()=>{
+            clearTimeout(resizeTimeout);
+            resizeTimeout = setTimeout(()=>{ swiper.update(); try{ swiper.loopFix(); }catch(e){} }, 200);
+          });
+
+        })();
+      </script>
+
+  </section><!-- /Link Terkait Section -->
 
   <!-- Cta Section -->
   <section id="cta" class="cta section light-background">
