@@ -6,41 +6,45 @@ use CodeIgniter\Model;
 
 class BeritaModel extends Model
 {
-    protected $table            = 'beritas';
-    protected $primaryKey       = 'id';
+    protected $table = 'berita';
+    protected $primaryKey = 'id_berita';
     protected $useAutoIncrement = true;
-    protected $returnType       = 'array';
-    protected $useSoftDeletes   = false;
-    protected $protectFields    = true;
-    protected $allowedFields    = [];
+    protected $returnType = 'array';
+    protected $useSoftDeletes = false;
+    protected $protectFields = true;
+    protected $allowedFields = [
+        'title',
+        'slug',
+        'excerpt',
+        'content',
+        'image',
+        'source',
+        'author',
+        'status',
+        'tanggal',
+        'published_at',
+        'created_at',
+        'updated_at',
+    ];
 
-    protected bool $allowEmptyInserts = false;
-    protected bool $updateOnlyChanged = true;
 
-    protected array $casts = [];
-    protected array $castHandlers = [];
+    public function getBeritaTerbaru($limit = 5)
+    {
+        return $this->where('status', 'published')
+            ->orderBy('created_at', 'DESC')
+            ->findAll($limit);
+    }
 
-    // Dates
-    protected $useTimestamps = false;
-    protected $dateFormat    = 'datetime';
-    protected $createdField  = 'created_at';
-    protected $updatedField  = 'updated_at';
-    protected $deletedField  = 'deleted_at';
+    public function getLatestBeritas($limit = 10)
+    {
+        return $this->where('status', 'published')
+            ->orderBy('created_at', 'DESC')
+            ->findAll($limit);
+    }
 
-    // Validation
-    protected $validationRules      = [];
-    protected $validationMessages   = [];
-    protected $skipValidation       = false;
-    protected $cleanValidationRules = true;
 
-    // Callbacks
-    protected $allowCallbacks = true;
-    protected $beforeInsert   = [];
-    protected $afterInsert    = [];
-    protected $beforeUpdate   = [];
-    protected $afterUpdate    = [];
-    protected $beforeFind     = [];
-    protected $afterFind      = [];
-    protected $beforeDelete   = [];
-    protected $afterDelete    = [];
+
+
+
+
 }

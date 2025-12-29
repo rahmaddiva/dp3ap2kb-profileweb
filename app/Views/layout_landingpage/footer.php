@@ -1,63 +1,54 @@
-  <footer id="footer" class="footer accent-background">
+<footer id="footer" class="footer accent-background">
 
-    <div class="container footer-top">
-      <div class="row gy-4">
-        <div class="col-lg-5 col-md-12 footer-about">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Learner</span>
-          </a>
-          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
-          <div class="social-links d-flex mt-4">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
-          </div>
+  <div class="container footer-top">
+    <div class="row gy-4">
+      <div class="col-lg-5 col-md-12 footer-about">
+        <a href="<?= base_url('/') ?>" class="logo d-flex align-items-center">
+          <span class="sitename">DP3AP2KB</span>
+        </a>
+        <p>Dinas Pemberdayaan Perempuan, Perlindungan Anak, Pengendalian Penduduk, dan Keluarga Berencana Kabupaten
+          Tanah Laut. Kami berkomitmen meningkatkan kualitas hidup keluarga melalui program pemberdayaan dan
+          perlindungan yang terintegrasi.</p>
+        <div class="social-links d-flex mt-4">
+          <a href="https://facebook.com/DP3AP2KBTANAHLAUT" aria-label="Facebook" target="_blank" rel="noopener"><i
+              class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/dp3ap2kbtanahlaut/" aria-label="Instagram" target="_blank"
+            rel="noopener"><i class="bi bi-instagram"></i></a>
+          <!-- tiktok -->
+          <a href="https://www.tiktok.com/@dp3ap2kbtanahlaut" aria-label="TikTok" target="_blank" rel="noopener"><i
+              class="bi bi-tiktok"></i></a>
         </div>
+      </div>
 
-        <div class="col-lg-2 col-6 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-6 footer-links">
-          <h4>Our Services</h4>
-          <ul>
-            <li><a href="#">Web Design</a></li>
-            <li><a href="#">Web Development</a></li>
-            <li><a href="#">Product Management</a></li>
-            <li><a href="#">Marketing</a></li>
-            <li><a href="#">Graphic Design</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-          <h4>Contact Us</h4>
-          <p>A108 Adam Street</p>
-          <p>New York, NY 535022</p>
-          <p>United States</p>
-          <p class="mt-4"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-          <p><strong>Email:</strong> <span>info@example.com</span></p>
-        </div>
+      <div class="col-lg-2 col-6 footer-links">
 
       </div>
-    </div>
 
-    <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="px-1 sitename">Learner</strong> <span>All Rights Reserved</span></p>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      <div class="col-lg-2 col-6 footer-links">
+
       </div>
-    </div>
 
-  </footer>
+      <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+        <h4>Kontak</h4>
+        <p>Komplek perkantoran gagas, Jl. A. Syairani, Angsau, Kec. Pelaihari, Kabupaten Tanah Laut</p>
+        <p>Kalimantan Selatan, Indonesia</p>
+        <p class="mt-3"><strong>Telepon:</strong> <span>(0512) 22855</span></p>
+        <p><strong>Email:</strong> <span>mail@dp2kbp3a.tanahlautkab.go.id</span></p>
+        <p><strong>Website:</strong> <a href="https://portal.tanahlautkab.go.id" target="_blank"
+            rel="noopener">portal.tanahlautkab.go.id</a></p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="container copyright text-center mt-4">
+    <p>© <span><?= date('Y') ?></span> Dinas P3AP2KB Kabupaten Tanah Laut. All Rights Reserved.</p>
+    <div class="credits">
+      <span>Powered by </span>
+      <a href="">
+        TIM PPDI DP3AP2KB
+      </a>
+    </div>
+  </div>
+
+</footer>

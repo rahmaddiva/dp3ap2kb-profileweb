@@ -1,0 +1,70 @@
+/* FAQ custom styles */
+:root{
+  --primary:#0d6efd;
+  --muted:#6c757d;
+  --card-bg: #ffffff;
+  --page-bg: linear-gradient(180deg,#f8fafc 0%,#ffffff 100%);
+}
+body.index-page{
+  background: var(--page-bg);
+}
+.container.py-5 h1{
+  font-family: 'DM Sans', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  color: #034d6d;
+  letter-spacing: -0.5px;
+  font-size: 28px;
+}
+.lead{color:var(--muted)}
+
+/* Accordion card */
+.card{
+  border: none;
+  border-radius: 0;
+  overflow: visible;
+}
+.card + .card{ /* thin divider between items */
+  border-top: 1px solid #e9eef2;
+}
+.card-header{
+  background: transparent;
+  padding: 0;
+}
+.faq-question{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  width:100%;
+  padding: 18px 8px;
+  color: #123542;
+  text-decoration:none;
+  font-weight:600;
+  font-size: 18px;
+}
+.faq-question:focus{outline:none}
+.faq-question::after{
+  content: '';
+  width: 18px;
+  height: 18px;
+  display: inline-block;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230d6efd' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate(0deg);
+  transition: transform .22s ease;
+}
+.faq-question[aria-expanded="true"]::after{
+  transform: rotate(180deg);
+}
+
+.card-body{
+  background: rgba(245,249,252,0.8);
+  padding: 16px 14px 22px 14px;
+  color:#234;
+  line-height:1.7;
+  font-size:15px;
+}
+
+@media (max-width:767px){
+  .faq-question{padding:14px;font-size:16px}
+  .container.py-5 h1{font-size:22px}
+}

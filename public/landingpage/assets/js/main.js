@@ -157,67 +157,87 @@
 
   window.addEventListener("load", initSwiper);
 
+  // Slider initialization: run after load to ensure DOM elements exist
   let currentSlideIndex = 1;
+  let autoPlayInterval = null;
 
-// Auto play slider
-let autoPlayInterval = setInterval(() => {
-  moveSlide(1);
-}, 10000);
-
-function moveSlide(n) {
-  clearInterval(autoPlayInterval);
-  showSlide(currentSlideIndex += n);
-  autoPlayInterval = setInterval(() => {
-    moveSlide(1);
-  }, 10000);
-}
-
-function currentSlide(n) {
-  clearInterval(autoPlayInterval);
-  showSlide(currentSlideIndex = n);
-  autoPlayInterval = setInterval(() => {
-    moveSlide(1);
-  }, 10000);
-}
-
-function showSlide(n) {
-  const slides = document.querySelectorAll('.slide-item');
-  const dots = document.querySelectorAll('.dot');
-  
-  if (n > slides.length) {
-    currentSlideIndex = 1;
+  function moveSlide(n) {
+    if (autoPlayInterval) clearInterval(autoPlayInterval);
+    showSlide(currentSlideIndex += n);
+    autoPlayInterval = setInterval(() => {
+      moveSlide(1);
+    }, 10000);
   }
-  if (n < 1) {
-    currentSlideIndex = slides.length;
+
+  function currentSlide(n) {
+    if (autoPlayInterval) clearInterval(autoPlayInterval);
+    showSlide(currentSlideIndex = n);
+    autoPlayInterval = setInterval(() => {
+      moveSlide(1);
+    }, 10000);
   }
-  
-  slides.forEach(slide => {
-    slide.classList.remove('active');
-  });
-  
-  dots.forEach(dot => {
-    dot.classList.remove('active');
-  });
-  
-  slides[currentSlideIndex - 1].classList.add('active');
-  dots[currentSlideIndex - 1].classList.add('active');
-}
 
-// Pause auto-play when hovering
-document.querySelector('.featured-news-slider')?.addEventListener('mouseenter', () => {
-  clearInterval(autoPlayInterval);
-});
+  function showSlide(n) {
+    const slides = document.querySelectorAll('.slide-item');
+    const dots = document.querySelectorAll('.dot');
 
-document.querySelector('.featured-news-slider')?.addEventListener('mouseleave', () => {
-  autoPlayInterval = setInterval(() => {
-    moveSlide(1);
-  }, 10000);
-});
+    // Guard: if there are no slides, do nothing
+    if (!slides || slides.length === 0) return;
 
-// Expose slider functions to global scope so inline `onclick` handlers work
-window.moveSlide = moveSlide;
-window.currentSlide = currentSlide;
-window.showSlide = showSlide;
+    if (n > slides.length) {
+      currentSlideIndex = 1;
+    }
+    if (n < 1) {
+      currentSlideIndex = slides.length;
+    }
+
+    slides.forEach(slide => {
+      slide.classList.remove('active');
+    });
+
+    if (dots && dots.length) {
+      dots.forEach(dot => {
+        dot.classList.remove('active');
+      });
+    }
+
+    slides[currentSlideIndex - 1].classList.add('active');
+    if (dots && dots.length) dots[currentSlideIndex - 1]?.classList.add('active');
+  }
+
+  function initFeaturedNewsSlider() {
+    const sliderEl = document.querySelector('.featured-news-slider');
+    // Start autoplay only if slider exists
+    const slides = document.querySelectorAll('.slide-item');
+    if (!sliderEl || !slides || slides.length === 0) return;
+
+    // Show first slide immediately
+    showSlide(currentSlideIndex);
+
+    // Auto play slider
+    autoPlayInterval = setInterval(() => {
+      moveSlide(1);
+    }, 10000);
+
+    // Pause auto-play when hovering
+    sliderEl.addEventListener('mouseenter', () => {
+      if (autoPlayInterval) clearInterval(autoPlayInterval);
+    });
+
+    sliderEl.addEventListener('mouseleave', () => {
+      if (autoPlayInterval) clearInterval(autoPlayInterval);
+      autoPlayInterval = setInterval(() => {
+        moveSlide(1);
+      }, 10000);
+    });
+
+    // Expose slider functions to global scope so inline `onclick` handlers work
+    window.moveSlide = moveSlide;
+    window.currentSlide = currentSlide;
+    window.showSlide = showSlide;
+  }
+
+  window.addEventListener('load', initFeaturedNewsSlider);
 
   /*
    * Pricing Toggle

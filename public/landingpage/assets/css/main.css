@@ -80,6 +80,13 @@ body {
   font-family: var(--default-font);
 }
 
+/* Site logo sizing - keep header logo slightly smaller for better layout */
+.site-logo {
+  max-height: 40px;
+  width: auto;
+  display: inline-block;
+}
+
 a {
   color: var(--accent-color);
   text-decoration: none;
@@ -100,6 +107,17 @@ h6 {
   color: var(--heading-color);
   font-family: var(--heading-font);
 }
+
+/* Global accent styling: used for highlighted words across headings and inline text */
+.accent {
+  color: #c59b2b; /* gold accent to match design */
+  font-weight: 800;
+  letter-spacing: -0.01em;
+  text-shadow: 0 1px 0 rgba(17, 24, 39, 0.03);
+}
+
+/* Ensure small inline accents remain readable on dark backgrounds */
+.dark-background .accent { color: var(--contrast-color); }
 
 /* PHP Email Form Messages
 ------------------------------*/
@@ -1143,7 +1161,8 @@ section,
   }
 
   .courses-hero .hero-text .accent {
-    color: var(--accent-color);
+    color: #c59b2b; /* match site accent style (gold) */
+    font-weight: 800;
   }
 }
 
@@ -1550,28 +1569,6 @@ section,
   display: inline-block;
   box-shadow: 0 6px 26px rgba(17, 24, 39, 0.06);
   border-radius: 8px;
-<<<<<<< HEAD
-=======
-  animation: floatLogo 6s ease-in-out infinite;
-  will-change: transform;
-}
-
-@keyframes floatLogo {
-  0%, 100% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-8px);
-  }
-}
-
-/* Respect user's reduced motion preference */
-@media (prefers-reduced-motion: reduce) {
-  .about .about-logo img {
-    animation: none !important;
-  }
->>>>>>> dbbb264a17e71fa49edeff41932464a2c854d5b0
 }
 
 /* decorative png positioned under the logo, anchored to section */
