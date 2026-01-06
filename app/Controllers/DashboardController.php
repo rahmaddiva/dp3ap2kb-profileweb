@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 use CodeIgniter\HTTP\ResponseInterface;
+use App\Services\BpsService;
 use App\Models\BeritaModel;
 use App\Models\ArtikelModel;
 use App\Models\PengumumanModel;
@@ -38,6 +39,28 @@ class DashboardController extends BaseController
         $this->pegawaiModel = new PegawaiModel();
         $this->instagramPostModel = new InstagramPostModel();
     }
+
+    private function normalizeBps(array $kelahiran, array $kematian): array
+    {
+        $map = [];
+
+        foreach ($kelahiran['data']['data'] ?? [] as $row) {
+            $map[$row['tahun']]['tfr'] = (float) $row['nilai'];
+        }
+
+        foreach ($kematian['data']['data'] ?? [] as $row) {
+            $map[$row['tahun']]['imr'] = (float) $row['nilai'];
+        }
+
+        ksort($map); // urut tahun naik
+
+        return [
+            'labels' => array_keys($map),
+            'tfr' => array_column($map, 'tfr'),
+            'imr' => array_column($map, 'imr'),
+        ];
+    }
+
 
     public function index()
     {
@@ -104,6 +127,8 @@ class DashboardController extends BaseController
         return view('postingan', $data);
     }
 
+
+
     public function visi_misi()
     {
         $title = [
@@ -136,14 +161,22 @@ class DashboardController extends BaseController
         return view("faq", $title);
     }
 
-    public function data()
+    public function data_bps()
     {
-        $title = [
-            "title" => "Data DP3AP2KB Kab. Tanah Laut",
-        ];
-        return view("data", $title);
+        $bps = new BpsService();
+
+        $chart = $this->normalizeBps(
+            $bps->kelahiran(),
+            $bps->kematian()
+        );
+
+        return view('data', [
+            'title' => 'Data DP3AP2KB Kab. Tanah Laut',
+            'chart' => $chart
+        ]);
     }
 
+    
     public function berita()
     {
         $perPage = 10;

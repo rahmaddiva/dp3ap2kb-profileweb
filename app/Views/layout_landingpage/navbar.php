@@ -19,7 +19,13 @@
         <li><a href="/infografis_umum">InfoGrafis</a></li>
       </ul>
     </li>
-    <li><a href="/data">Data</a></li>
+    <li class="dropdown"><a href="#"><span>Data</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+      <ul>
+        <li><a href="">Bidang Keluarga Berencana dan Keluarga Sejahtera</a></li>
+        <li><a href="">Bidang Pengendalian Penduduk Data dan Informasi</a></li>
+        <li><a href="">Bidang Pemberdayaan Perempuan dan Perlindungan Anak</a></li>
+      </ul>
+    </li>
     <li><a href="/faq">FAQ</a></li>
     <li class="dropdown"><a href="#"><span>Layanan</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
       <ul>

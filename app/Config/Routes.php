@@ -17,10 +17,13 @@ $routes->get('/foto_umum', "DashboardController::foto");
 $routes->get('/postingan', "DashboardController::postingan");
 $routes->get('/infografis_umum', "DashboardController::infografis");
 $routes->get('/faq', "DashboardController::faq");
-$routes->get('/data', "DashboardController::data");
 $routes->get('/pejabat', "DashboardController::pejabat");
+$routes->get('data', 'DataController::index');
 
 
+
+// Halaman view data BPS
+$routes->get('/data', 'DashboardController::data_bps');
 $routes->get('/login', 'AuthController::login');
 $routes->get('/logout', 'AuthController::logout', ['filter' => 'login:Admin']);
 $routes->post('/proses-login', 'AuthController::proses_login');
